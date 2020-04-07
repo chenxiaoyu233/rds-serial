@@ -26,7 +26,7 @@ void main_batch(const std::vector<std::string>& graphs, std::function<algorithm_
 int main(int argc, char* argv[])
 {
   fprintf(stderr, "Russian-Doll-Search, build %s\n\n", gitversion);
-  pr_();
+  //pr_();
 
   if(argc < 2 || std::string(argv[1]) == parameters::PARAM_HELP || std::string(argv[1]) == "-?") {
     parameters::show_usage(argv[0]);
