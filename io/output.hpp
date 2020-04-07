@@ -41,7 +41,6 @@ void fancy(std::ostream& out, const algorithm_run& run) {
   }
   pr_();
   */
-    run.complete &= run.valid;
     out << "ans: " << run.value << std::endl;
     out << "cost-of-time: " << run.time.count() << std::endl;
     out << "time-out-flag: " << int(run.complete & run.valid) << std::endl;
