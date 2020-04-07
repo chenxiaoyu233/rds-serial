@@ -7,6 +7,7 @@
 namespace output
 {
 void fancy(std::ostream& out, const algorithm_run& run) {
+  /*
   pr_();
   out<<"RDS run for "<<run.graphname;
   if (run.complement) {
@@ -39,6 +40,11 @@ void fancy(std::ostream& out, const algorithm_run& run) {
     }
   }
   pr_();
+  */
+    run.complete &= run.valid;
+    out << "ans: " << run.value << endl;
+    out << "cost-of-time: " << run.time.count() << endl;
+    out << "time-out-flag: " << run.complete << endl;
 }
 
 void latex(std::ostream& out, const algorithm_run& run) {
